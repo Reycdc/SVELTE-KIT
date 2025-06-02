@@ -7,11 +7,11 @@ export const getPool = () => {
   if (pool) return pool;
 
   const config: mariadb.PoolConfig = {
-    host: DB_HOST,
-    user: DB_USER,
-    password: DB_PASS,
-    database: DB_NAME,
-    port: parseInt(DB_PORT),
+    host: 'localhost',
+    user: 'root',
+    password: 'root',
+    database: 'SVELTE_KIT',
+    port: parseInt('3306'),
     connectionLimit: 5,
     multipleStatements: true,
     bigIntAsNumber: true,
